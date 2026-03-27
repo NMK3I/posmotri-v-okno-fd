@@ -143,7 +143,7 @@ ol {
   outline: none;
 }
 
-.search-form__label:has(.search-form__textfield:focus-visible) {
+.search-form__label:has(:focus-visible) {
   outline: 1px solid currentColor;
   outline-offset: 1px;
 }
@@ -175,12 +175,9 @@ ol {
   cursor: pointer;
 }
 
-.search-form__label:has(.search-form__checkbox:focus-visible) {
-  outline: 1px solid currentColor;
-}
-
 .button {
   border: 1px solid currentColor;
+  padding: 5px 0;
   color: currentColor;
   font: inherit;
   font-weight: 700;
@@ -190,8 +187,7 @@ ol {
 
 .search-form__submit-button {
   align-self: flex-end;
-  width: 194px;
-  height: 34px;
+  min-width: 194px;
 }
 
 .search-form__submit-button:hover {
@@ -289,7 +285,6 @@ ol {
   display: flex;
   align-items: flex-start;
   width: 390px;
-  height: 103px;
   transition: transform 0.3s ease-out;
 }
 
@@ -331,5 +326,4 @@ ol {
 
 .more-button {
   margin: 0 3px 2px 2px;
-  padding: 5px 0;
 }
